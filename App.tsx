@@ -171,7 +171,7 @@ const ValentineRequest = () => {
             <Sparkles className="w-16 h-16 text-yellow-500 animate-[bounce_2s_infinite]" />
             <Heart className="absolute -top-2 -right-2 w-8 h-8 text-pink-500 fill-pink-500 animate-pulse" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-cursive text-pink-600">Yay, Chelsea!</h2>
+          <h2 className="text-4xl md:text-5xl font-cursive text-pink-600">Yay, hon!</h2>
           <p className="text-xl md:text-2xl font-semibold text-slate-700 leading-relaxed">
             Thank you for saying yes! <br/>
             Can't wait for our Valentine's date on Feb 14! 🌹
@@ -199,7 +199,7 @@ const ValentineRequest = () => {
 
           <div className="space-y-2">
             <h1 className="text-4xl md:text-7xl font-cursive text-pink-600 drop-shadow-sm">
-              Hi Chelsea!
+              Hi hon!
             </h1>
             
             <p className="text-xl md:text-3xl font-semibold text-slate-700 leading-tight">
@@ -236,7 +236,7 @@ const ValentineRequest = () => {
 
           {noCount > 2 && (
             <p className="text-pink-400 font-medium animate-bounce mt-8 text-sm md:text-base">
-              {noCount > 8 ? "Chelsea, you can't run forever! 😘" : "Psst... the YES button is looking really good right now!"}
+              {noCount > 8 ? "hon, you can't run forever! 😘" : "Psst... the YES button is looking really good right now!"}
             </p>
           )}
         </div>
