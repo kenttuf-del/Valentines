@@ -55,14 +55,14 @@ const SweetLetter: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
-        contents: "Write a very short, sweet, and concise Valentine's Day message for someone called 'Chelsea'. It should be only 2 sentences. Include the phrase 'so lucky to have you in my life, Chelsea'. Start with 'Hi Chelsea,'",
+        contents: "Write a very short, sweet, and concise Valentine's Day message for someone called 'Hon'. It should be only 2 sentences. Include the phrase 'so lucky to have you in my life, Hon'. Start with 'Hi hon,'",
         config: {
           temperature: 0.8,
         }
       });
-      setLetterContent(response.text || 'Hi Chelsea, you make my life so much brighter just by being in it. I am so lucky to have you in my life, Chelsea.');
+      setLetterContent(response.text || 'Hi hon, you make my life so much brighter just by being in it. I am so lucky to have you in my life, Hon.');
     } catch (error) {
-      setLetterContent('Hi Chelsea, I am so lucky to have you in my life. You have a heart of gold and I love you more every day.');
+      setLetterContent('Hi hon, I am so lucky to have you in my life. You have a heart of gold and I love you more every day.');
     } finally {
       setLoading(false);
     }
@@ -79,7 +79,7 @@ const SweetLetter: React.FC<{ onBack: () => void }> = ({ onBack }) => {
           <MessageSquareHeart className="text-pink-500 w-12 h-12 md:w-16 md:h-16 animate-bounce" />
         </div>
         
-        <h2 className="text-3xl md:text-4xl font-cursive text-pink-600 text-center mb-6">Dear Chelsea</h2>
+        <h2 className="text-3xl md:text-4xl font-cursive text-pink-600 text-center mb-6">Dear Hon</h2>
         
         <div className="text-slate-700 leading-relaxed text-base md:text-lg space-y-4 max-h-[50vh] overflow-y-auto pr-2 custom-scrollbar italic text-center w-full">
           {loading ? (
@@ -112,19 +112,19 @@ const ValentineRequest = () => {
 
   const noMessages = [
     "No",
-    "Are you sure, Chelsea? 🥺",
+    "Sure ka? 🥺",
     "Really really sure??",
     "Think again! ❤️",
-    "I'll be sad... 💔",
-    "I'll buy you flowers! 💐",
-    "Chelsea, please? 👉👈",
+    "Ma sad ko... 💔",
+    "Mag-potato corner man ta! 💐",
+    "Hon, please? 👉👈",
     "You're breaking my heart!",
     "Click Yes for a surprise!",
     "Error 404: No Button Broken",
     "Just click yes already! 😂",
-    "Persistence is my middle name",
+    "Sige na please",
     "I can do this all day!",
-    "No choice now! 😉",
+    "Wala nakay choice 😉",
   ];
 
   const handleNoClick = () => {
